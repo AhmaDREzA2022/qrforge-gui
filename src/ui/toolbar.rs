@@ -1,9 +1,7 @@
 use crate::state::AppState;
-use arboard::LinuxClipboardKind::Clipboard;
 use eframe::egui;
-use egui::accesskit::Role::Code;
 use qrforge::{generate_code, to_png, to_svg, PngOpts, SvgOpts};
-use std::io::Cursor;
+
 
 pub fn show(ui: &mut egui::Ui, state: &mut AppState, needs_regenerate: &mut bool) {
     ui.horizontal(|ui| {

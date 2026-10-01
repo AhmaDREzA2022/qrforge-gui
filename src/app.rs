@@ -1,7 +1,7 @@
 use crate::state::AppState;
 use crate::ui::{preview, sidebar, toolbar};
 use eframe::egui;
-use qrforge::{generate_code, to_png, EccLevel, PngOpts};
+use qrforge::{generate_code, to_png, PngOpts};
 
 pub struct QrForgeApp {
     pub state: AppState,

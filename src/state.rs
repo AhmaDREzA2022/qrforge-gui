@@ -1,5 +1,3 @@
-use std::default;
-
 use qrforge::{ColorOptions, EccLevel};
 
 #[derive(Clone)]
