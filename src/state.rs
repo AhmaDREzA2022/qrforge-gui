@@ -1,6 +1,6 @@
 use std::default;
 
-use qrforge::{ColorOptions, EccLevel}
+use qrforge::{ColorOptions, EccLevel};
 
 #[derive(Clone)]
 pub struct AppState {
