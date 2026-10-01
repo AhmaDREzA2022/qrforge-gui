@@ -1,0 +1,19 @@
+[package]
+name = "qrforge-gui"
+version = "0.1.0"
+edition = "2021"
+description = "A modern GUI for generating QR codes, powered by qrforge"
+authors = ["Adra"]
+
+[dependencies]
+eframe = "0.29"
+egui = "0.29"
+image = "0.25"
+rfd = "0.15"          # native file dialogs
+arboard = "3"         # clipboard
+qrforge = { git = "https://github.com/AhmaDREzA2022/qrforge" }
+
+[profile.release]
+lto = true
+codegen-units = 1
+strip = true
